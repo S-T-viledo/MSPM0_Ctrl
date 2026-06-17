@@ -1,0 +1,35 @@
+# CCS build outputs
+**/Debug/
+**/Release/
+*.out
+*.map
+*.hex
+*.bin
+*.elf
+*.obj
+*.o
+*.d
+*.lst
+*.log
+
+# CCS generated/cache files
+.xdchelp
+.config/
+.launches/
+
+# Eclipse/CCS workspace metadata
+.metadata/
+RemoteSystemsTempFiles/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor files
+.vscode/
+.idea/
+*.swp
+
+# Temporary files
+*.tmp
+*.bak
