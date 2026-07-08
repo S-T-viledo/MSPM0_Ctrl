@@ -17,6 +17,10 @@
 .config/
 .launches/
 
+# CCS Theia local config
+.theia/
+.codex/
+
 # Eclipse/CCS workspace metadata
 .metadata/
 RemoteSystemsTempFiles/
