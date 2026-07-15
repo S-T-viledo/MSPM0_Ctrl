@@ -32,15 +32,15 @@
 
 #include "ti_msp_dl_config.h"
 #include "user/board/board_init.h"
-#include "user/app/app_track_oled_test.h"
+#include "user/app/app_mpu_test.h"
 
 int main(void)
 {
     SYSCFG_DL_init();
     board_init();
-    app_track_oled_test_init();
+    app_mpu_test_init();
 
     while (1) {
-        app_track_oled_test_task();
+        app_mpu_test_task();
     }
 }

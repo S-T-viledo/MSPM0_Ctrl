@@ -301,7 +301,7 @@ void app_track_oled_test_init(void)
 {
     track_sensor_config_t config = {
         2000U,
-        true
+        false
     };
 
     bsp_uart0_write_string("\r\nMSPM0 track OLED test start\r\n");
@@ -320,8 +320,8 @@ void app_track_oled_test_init(void)
 
 void app_track_oled_test_task(void)
 {
-    uint8_t page = (uint8_t) ((g_tick / 8UL) % 3UL);
-    uint8_t hold_channel = (uint8_t) ((g_tick / 8UL) % TRACK_SENSOR_TOTAL_CHANNELS);
+    uint8_t page = 0U; /* locked to main page */
+    uint8_t hold_channel = 0U;
     uint16_t hold_raw = 0U;
     track_sensor_data_t data;
 

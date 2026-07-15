@@ -12,6 +12,7 @@ void board_init(void)
     bsp_gpio_init();
     bsp_adc_init();
     bsp_i2c_oled_init();
+    bsp_i2c_mpu_init();
     bsp_spi0_init();
     bsp_timer_init();
     bsp_uart0_init();
