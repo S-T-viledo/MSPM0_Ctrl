@@ -32,15 +32,15 @@
 
 #include "ti_msp_dl_config.h"
 #include "user/board/board_init.h"
-#include "user/app/app_mpu_test.h"
+#include "user/app/app_encoder_test.h"
 
 int main(void)
 {
     SYSCFG_DL_init();
     board_init();
-    app_mpu_test_init();
+    app_encoder_test_init();
 
     while (1) {
-        app_mpu_test_task();
+        app_encoder_test_task();
     }
 }
